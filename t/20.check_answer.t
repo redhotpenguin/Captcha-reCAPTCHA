@@ -67,7 +67,7 @@ sub _post_request {
   $self->{t_args} = $args;
 
   return HTTP::Response->new( 200, 'OK',
-    [ 'Content-type:' => 'text/plain' ],
+    [ 'Content-type' => 'text/plain' ],
     $self->{t_response} );
 }
 
